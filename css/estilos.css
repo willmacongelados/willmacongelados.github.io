@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@import url('animate.css');
+
+html{
+    scroll-behavior: smooth;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+*{
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    background-image: url(../imagenes/53b.jpg);
+    background-position:top;
+    background-size:cover;
+    background-attachment:fixed;
+    overflow-x:hidden;
+}
+body::-webkit-scrollbar{
+    width: 5px;
+}
+body::-webkit-scrollbar-thumb{
+    background: #a10b21;
+    border-radius: 10px;
+}
+
+/* Cabecera, pedidos, logo y menu*/
+
+header .barra{
+    padding: 30px 0px 0px;
+}
+header .barra ul{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: normal;
+    margin-right: 20px;
+}
+header .barra ul li{
+    margin-right: 15px;
+}
+header .barra img{
+    width: 30%;
+    padding-bottom: 10px;
+}
+header .barra .menu a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight:bold;
+    margin-left:  25px;    
+    margin-right: 25px;    
+    text-transform: uppercase;
+}
+header .barra .menu a:hover{
+  color: #ffbb32;
+  animation: tada;
+  animation-duration: 1s;
+}
+#logo{
+    animation: bounceInDown;
+    animation-duration: 1.5s;
+}
+  
+
+/*  Portada */
+
+section{
+    margin: auto;
+}
+section .portada{
+    padding: 50px 0;
+    margin: 0px;
+}
+section .portada .portadaderecha p{
+    line-height: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+section .portada .portadaderecha h3{
+    line-height: .5;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 4rem;
+    color: #ffbb32;
+}
+
+section .portada .portadaderecha h4{
+    line-height: 1.3;
+    letter-spacing: .5px;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+section .portada .carousel .imagen{
+    margin: auto;
+    width: 70%;
+}
+
+/* animaciones portada */
+
+#principal-carousel{
+    animation: fadeInRight;
+    animation-duration: 1s;
+}
+
+#letras1{
+    animation: fadeInLeft;
+    animation-duration: 1s;
+}
+
+#letras2{
+    animation: fadeInLeft;
+    animation-duration: 1.5s;
+}
+
+
+#letras2b{
+    animation: fadeInLeft;
+    animation-duration: 2s;
+}
+
+#menu{
+    animation: fadeInRight;
+    animation-duration: 2s;
+}
+#redes{
+    animation: fadeInRight;
+    animation-duration: 2s;
+}
+.redes p{
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.redes span{
+    line-height: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: #ffbb32;
+}
+
+/* Nuestros productos */
+
+.productos{
+    background-color: #ffffff;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.productos h2{
+    text-align: center;
+    font-size: 2rem;    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: #A10B21;
+}
+.productos p{
+    font-size: 1.4rem;
+}
+.productos p span{
+    font-size: 1.4rem;
+    color: #a10b21;
+}
+
+.snip1581 {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 10px;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: left;
+    font-size: 16px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.snip1581 * {
+    transition: all 0.35s;   
+}
+
+.snip1581 img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+.snip1581 figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.snip1581 figcaption .title3{
+    opacity:0;
+}
+
+.snip1581:hover figcaption {
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
+}
+
+.snip1581:hover figcaption h3{
+    opacity: 1;
+    animation: bounceIn .35s ease-in-out;
+    -webkit-animation: bounceIn .35s ease-in-out;
+}
+.snip1581 h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    margin: 3px 0;
+    text-align: center;
+}
+
+.snip1581 .title2 {
+    color: #ffbb32;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.snip1581 .title3 {
+    font-weight: 400;
+    text-transform:capitalize;
+    font-size: .85rem;
+}
+
+.snip1581 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.snip1581:hover img{
+    transform: scale(1.3) rotate(9deg);
+    -webkit-transform: scale(1.3) rotate(9deg);
+    -moz-transform: scale(1.3) rotate(9deg);
+    -ms-transform: scale(1.3) rotate(9deg);
+    -o-transform: scale(1.3) rotate(9deg);
+}
+
+.productos .subir{
+    top: 90%;
+    left: 93%;
+}
+.productos .subir:hover{
+    cursor: pointer;
+    color: #A10B21;
+}
+
+/*animaciones productos */
+
+.letras{
+    animation: fadeInLeft;
+    animation-duration: 1.5s;
+}
+
+#figura01{
+    animation: fadeInLeft;
+    animation-duration: 2s;
+}
+
+#figura02{
+    animation: fadeInLeft;
+    animation-duration: 1.5s;
+}
+
+#figura03{
+    animation: fadeIn;
+    animation-duration: 3s;
+}
+
+#figura04{
+    animation: fadeInRight;
+    animation-duration: 1.5s;
+}
+
+#figura05{
+    animation: fadeInRight;
+    animation-duration: 2s;
+}
+.letras3{
+    animation: fadeInRight;
+    animation-duration: 1.5s;
+}
+
+
+
+
+/* servicios */
+
+.servicios{
+    background-image: url(../imagenes/fondo2zb.png);
+    background-position:top;
+    background-size:cover;
+    background-attachment:fixed;
+    overflow-x:hidden;
+    display: flex;
+    align-items:center;
+}
+#servifondo{
+    background-color: #000000ca;
+    padding: 50px 0;
+}
+.servicios .letraserv h2{
+    margin-bottom: 4vh;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+
+.servicios .iconos .card{
+    border: none;
+    padding: 2vh;
+    background-color: #00000000;
+}
+
+.servicios .iconos .card h4{
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+
+.servicios .iconos .card{
+    text-align: center;
+    color:#ffffff;
+    font-size: 1rem;
+}
+
+.servicios .iconos .card h2{
+    text-align: center;
+}
+
+.servicios .iconos .card i{
+    display: flex;
+    justify-content:center;
+}
+
+.servicios .iconos .card i:hover{
+    cursor:pointer;
+    animation: bounce .35s ease-in-out;
+    -webkit-animation: bounce .35s ease-in-out;
+}
+
+
+.servicios .iconos .card a{
+    padding: 5px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    color:#ffffff;
+    font-size: 1rem;
+}
+
+.servicios .iconos .card a:hover{
+    cursor: pointer;
+    color: #ffbb32;
+    transition: .35s ease-in-out;
+}
+
+.servicios .letraserv2 p{
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+
+.servicios .letraserv2 p span{
+    font-size: 1.4rem;
+}
+
+.servicios .subir{
+    top: 90%;
+    left: 93%;
+}
+.servicios .subir:hover{
+    cursor: pointer;
+    color: #A10B21;
+}
+
+/* nosotros */
+
+.nosotros{
+    background-color: #ffffff;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 5vh 0px;
+}
+
+.nosotros h2{
+    text-align: center;
+    font-size: 2rem;    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: #A10B21;
+}
+.nosotros p{
+    font-size: 1.4rem;
+    text-align: justify;
+}
+.nosotros p span{
+    font-size: 1.4rem;
+    color: #a10b21;
+}
+
+.nosotros .fotos{
+    position: relative;
+    padding: 0;
+}
+
+.nosotros .fotos img{
+    padding: 0;
+    position: absolute;
+}
+
+.nosotros .fotos .foto01{
+    width: 60%;
+    margin-left: 5%;
+    top: 0;
+    left: 0;
+}
+.nosotros .fotos .foto02{
+    width: 60%;
+    left: 25%;
+    top: 20%;
+}
+
+.nosotros .subir{
+    top: 90%;
+    left: 93%;
+}
+.nosotros .subir:hover{
+    cursor: pointer;
+    color: #A10B21;
+}
+
+
+.nosotros .parrafo .fotologo{
+    padding-bottom: 45px;
+    width: 75%;
+}
+
+#foto01{
+    animation: fadeInLeft;
+    animation-duration: 1.5s;
+}
+
+#foto02{
+    animation: fadeInUp;
+    animation-duration: 1.5s;
+}
+
+#logo2{
+    animation: bounceInRight;
+    animation-duration: 2s;
+}
+#parrafo2{
+    animation: fadeInRight;
+    animation-duration: 2.5s;
+}
